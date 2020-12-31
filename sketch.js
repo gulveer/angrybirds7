@@ -97,7 +97,7 @@ async function getBackgroundImage() {
 var response = await fetch("https://worldtimeapi.org/api/timezone/Asia/Kolkata");
 var responseJSON = await response.json();
 console.log(responseJSON);
-var dateTime = responseJSON.datetime;
+var datetime = responseJSON.datetime;
 var hour = datetime.slice(11,13);
 if(hour>=06 && hour<=19){
 bg = "sprites/bg.png"
